@@ -1,7 +1,6 @@
 // set endpoint and your API access key
 var endpoint = 'live';
-var access_key = process.env.COINLAYER_API_KEY;
-
+var access_key = '1676521fc58113a4eff8ddf3d2534c03';
 
 // Use jQuery to make a GET request to the coinlayer API endpoint to retrieve
 // the current exchange rates in USD for the cryptocurrencies
