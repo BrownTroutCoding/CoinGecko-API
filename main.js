@@ -1,13 +1,10 @@
-// set endpoint and your API access key
-var endpoint = 'live';
-var access_key = '1676521fc58113a4eff8ddf3d2534c03';
+// http://api.coinlayer.com/2018-04-30?access_key=80a9a2406f231c0bceb184461a3d7b89
 
-// Use jQuery to make a GET request to the coinlayer API endpoint to retrieve
-// the current exchange rates in USD for the cryptocurrencies
 $(document).ready(function() {
     var currencies = ['BTC', 'ADA', 'LINK', 'DOGE', 'ETH'];
-    var url = 'http://api.coinlayer.com/api/';
-    var apiUrl = url + endpoint + '?access_key=' + access_key + '&symbols=' + currencies.join(',');
+    var url = 'http://localhost:3000/api/';
+    var endpoint = 'live';
+    var apiUrl = url + endpoint;
 
     $.get(apiUrl, function(data) {
         // update each coin price in HTML
