@@ -1,8 +1,10 @@
 $(document).ready(function() {
     var currencies = ['BTC', 'ADA', 'LINK', 'DOGE', 'ETH'];
-    var apiUrl = 'http://api.coinlayer.com/live?access_key=51d05fa3f63129165a8eadd9c49521e8&symbols=BTC,ADA,LINK,DOGE,ETH';
+    var api_key = '51d05fa3f63129165a8eadd9c49521e8';
+    var url = 'http://api.coinlayer.com/live';
 
-    $.get(apiUrl, function(data) {
+
+    $.get(url, {access_key: api_key, symbols: currencies.join(',')}, function(data) {
         // update each coin price in HTML
         $('.coin-price').each(function(index) {
             var coin = currencies[index];

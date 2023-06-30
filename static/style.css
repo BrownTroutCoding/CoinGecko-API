@@ -134,7 +134,7 @@ body {
 .loader {
 	position: relative;
     /* padding-top: 5em; */
-	left: 50%;
+	left: 33%;
 	-webkit-transform: translate(-50%,-50%);
 	   -moz-transform: translate(-50%,-50%);
 	    -ms-transform: translate(-50%,-50%);
@@ -144,7 +144,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 15em;
+    margin-top: 10em;
     text-align: center;
 }
 
@@ -152,7 +152,7 @@ body {
 	/* margin: 0; */
 	/* padding: 0; */
 	text-transform: uppercase;
-	font-size: 8em;
+	font-size: 7em;
 	color: rgba(255,255,255,.1);
 	background-image: url(https://image.ibb.co/ciSeac/image.png);
 	background-repeat: repeat-x;
