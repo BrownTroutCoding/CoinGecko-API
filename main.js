@@ -1,10 +1,6 @@
-// http://api.coinlayer.com/2018-04-30?access_key=80a9a2406f231c0bceb184461a3d7b89
-
 $(document).ready(function() {
     var currencies = ['BTC', 'ADA', 'LINK', 'DOGE', 'ETH'];
-    var url = 'http://localhost:3000/api/';
-    var endpoint = 'live';
-    var apiUrl = url + endpoint;
+    var apiUrl = 'http://api.coinlayer.com/live?access_key=51d05fa3f63129165a8eadd9c49521e8&symbols=BTC,ADA,LINK,DOGE,ETH';
 
     $.get(apiUrl, function(data) {
         // update each coin price in HTML
